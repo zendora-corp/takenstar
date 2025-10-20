@@ -23,6 +23,8 @@ const stats = [
   { icon: TrendingUpIcon, label: 'Special mention for school-level toppers', value: '76.5%' }
 ];
 
+
+
 export default function Stats() {
   const [ref, inView] = useInView({
     triggerOnce: true,
