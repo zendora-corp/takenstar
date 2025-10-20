@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://takenstar-backend.vercel.app/api/public';
+const API_BASE_URL = 'https://takenstar-ms.vercel.app/api/public';
 
 export interface ExamYear {
   id: string;
