@@ -91,12 +91,13 @@ export const TESTIMONIALS = [
 export const ABOUT_TEXT = "The Takenstar Talent Search Exam (TTSE) is an initiative by Takenstar Education & Technology to encourage young students to showcase their knowledge, reasoning, and problem-solving skills.";
 
 export const NAV_ITEMS = [
-  { label: 'Home', href: '/' },
+  // { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Registration', href: '/registration' },
-  { label: 'Recognition', href: '/recognition' },
+  // { label: 'Recognition', href: '/recognition' },
+  { label: 'Guide', href: '/guide' },
   { label: 'Results', href: '/results' },
-  { label: 'FAQs', href: '/faqs' },
+  // { label: 'FAQs', href: '/faqs' },
   { label: 'Contact', href: '/contact' },
 ];
 

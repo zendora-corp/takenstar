@@ -15,6 +15,7 @@ import {
   Container,
   useMediaQuery,
   useTheme,
+  Typography,
 } from '@mui/material';
 import { useRouter, usePathname } from 'next/navigation';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -22,6 +23,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { NAV_ITEMS } from '@/app/_data/home';
 import Image from 'next/image';
 import Link from 'next/link';
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function NavigationBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,19 +58,22 @@ export default function NavigationBar() {
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar sx={{ py: 1 }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, flexGrow: 1 }}>
-            <Image
-              src="/takenstar-5.png"
-              alt="TakenStar Logo"
-              width={58}
-              height={58}
-              style={{
-                objectFit: 'contain',
-                borderRadius: '50px', // 👈 Add border radius here
-              }}
-            />
-          </Box>
+        <Toolbar sx={{ py: 1, justifyContent:"space-between" }}>
+          <Link href={'/'}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, flexGrow: 1 }}>
+              <SchoolIcon sx={{ fontSize: 58, color: 'secondary.main' }} />
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  fontFamily: 'Poppins, sans-serif',
+                  color: scrolled ? 'primary.main' : '#FFFFFF'
+                }}
+              >
+                Takenstar Scholar
+              </Typography>
+            </Box>
+          </Link>
 
           {isMobile ? (
             <IconButton

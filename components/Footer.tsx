@@ -37,7 +37,7 @@ export default function Footer() {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                Takenstar
+                Takenstar Scholar
               </Typography>
             </Box>
             <Typography
@@ -46,21 +46,6 @@ export default function Footer() {
                 color: 'rgba(255, 255, 255, 0.7)',
                 lineHeight: 1.8,
                 fontSize: '0.95rem',
-              }}
-            >
-              Empowering young minds through national-level talent examinations. Building the future
-              of India, one student at a time.
-            </Typography>
-
-            {/* Sub-headline */}
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'rgba(255, 255, 255, 0.8)',
-                lineHeight: 1.8,
-                fontSize: '0.95rem',
-                mt: 2,
-                fontStyle: 'italic',
               }}
             >
               A regional talent search exam for Classes 6 to 12, organized across schools in Assam,

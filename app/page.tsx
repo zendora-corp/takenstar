@@ -9,6 +9,9 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import FAQ from '@/components/FAQ';
+import Prizes from '@/components/recognition/Prizes';
+import Stats from '@/components/Stats';
 
 export default function Home() {
   return (
@@ -23,6 +26,9 @@ export default function Home() {
       <AboutSection />
       <WhyParticipateSection />
       {/* <TestimonialsSection /> */}
+      <Stats />
+      <Prizes />
+      <FAQ />
       <CTASection />
       <Footer />
       <ScrollToTop />

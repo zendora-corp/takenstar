@@ -4,6 +4,7 @@ import { Box, Container, Typography, Card, CardContent } from '@mui/material';
 import { motion } from 'framer-motion';
 import Countdown from 'react-countdown';
 import { COUNTDOWN_DATES } from '@/app/_data/home';
+import RegistrationCountdown from './RegistrationCountdown';
 
 export default function RegistrationHeader() {
   const renderer = ({ days, hours, minutes, seconds }: any) => (
@@ -83,30 +84,7 @@ export default function RegistrationHeader() {
           >
             Secure your spot in India's premier talent search examination
           </Typography>
-
-          <Card
-            sx={{
-              backgroundColor: 'rgba(255, 255, 255, 0.95)',
-              backdropFilter: 'blur(10px)',
-              borderRadius: 3,
-              boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            }}
-          >
-            <CardContent sx={{ py: 4 }}>
-              <Typography
-                variant="h6"
-                align="center"
-                sx={{
-                  color: 'primary.main',
-                  fontWeight: 600,
-                  mb: 3,
-                }}
-              >
-                Registration Closes In
-              </Typography>
-              <Countdown date={COUNTDOWN_DATES.registrationCloses} renderer={renderer} />
-            </CardContent>
-          </Card>
+          <RegistrationCountdown />
         </motion.div>
       </Container>
     </Box>
