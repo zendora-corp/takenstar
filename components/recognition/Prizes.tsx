@@ -55,7 +55,7 @@ export default function TopAchievers() {
                     color: 'text.primary',
                     }}
                 >
-                    Group A (Classes 6–8)
+                    Junior Scholar (Classes 6–8)
                 </Typography>
                 </motion.div>
 
@@ -166,7 +166,7 @@ export default function TopAchievers() {
                     color: 'text.primary',
                     }}
                 >
-                    Group B (Classes 9–12)
+                    Senior Scholar (Classes 9–12)
                 </Typography>
                 </motion.div>
 

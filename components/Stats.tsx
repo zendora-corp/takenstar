@@ -19,7 +19,7 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Link from 'next/link';
 
 const stats = [
-  { icon: PeopleIcon, label: 'Certificate of Participation', value: '8,247' },
+  { icon: PeopleIcon, label: 'Certificate of Participation Top 50 students', value: '8,247' },
   { icon: TrendingUpIcon, label: 'Special mention for school-level toppers', value: '76.5%' }
 ];
 

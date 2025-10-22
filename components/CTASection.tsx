@@ -95,7 +95,7 @@ export default function CTASection() {
                     },
                   }}
                 >
-                  Register for Free
+                  Register Now
                 </Button>
               </Link>
             </motion.div>

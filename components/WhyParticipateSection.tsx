@@ -45,7 +45,7 @@ export default function WhyParticipateSection() {
               color: 'text.primary',
             }}
           >
-            Why Participate?
+            why Participate
           </Typography>
         </motion.div>
 

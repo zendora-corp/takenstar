@@ -6,12 +6,12 @@ export const COUNTDOWN_DATES = {
 export const STATS = [
   {
     icon: 'Person',
-    value: 'Group A',
+    value: 'Junior Scholar',
     label: 'Classes 6, 7, 8',
   },
   {
     icon: 'EmojiEvents',
-    value: 'Group B',
+    value: 'Senior Scholar',
     label: 'Classes 9, 10, 11, 12',
   }
 ];
@@ -19,17 +19,17 @@ export const STATS = [
 export const MISN = [
   {
     icon: 'Person',
-    value: 'Group A',
+    value: 'Junior Scholar',
     label: 'To create a fair platform for students',
   },
   {
     icon: 'EmojiEvents',
-    value: 'Group B',
+    value: 'Senior Scholar',
     label: 'To build exam confidence',
   },
   {
     icon: 'EmojiEvents',
-    value: 'Group B',
+    value: 'Senior Scholar',
     label: 'To reward excellence with cash prizes and certificates',
   }
 ];
