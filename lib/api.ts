@@ -76,7 +76,7 @@ export interface RegistrationFormData {
   examYearId: string;
   fullName: string;
   gender: 'Male' | 'Female' | 'Other';
-  dob: string;
+  dob?: string | null; // ✅ Optional
   class: number;
   medium: 'Assamese' | 'English';
   schoolId: string;
@@ -84,7 +84,7 @@ export interface RegistrationFormData {
   districtId: string;
   address: string;
   studentMobile: string;
-  guardianMobile: string;
+  guardianMobile?: string | null; // ✅ Optional
   email?: string;
   paymentOption: 'Online' | 'Offline';
   transactionId?: string;

@@ -50,7 +50,7 @@ export default function RegistrationForm() {
   const [formData, setFormData] = useState({
     fullName: '',
     gender: '',
-    dob: '',
+    dob: '', // optional, empty means null
     class: '',
     medium: '',
     schoolId: '',
@@ -58,12 +58,13 @@ export default function RegistrationForm() {
     districtId: '',
     address: '',
     studentMobile: '',
-    guardianMobile: '',
+    guardianMobile: '', // optional
     email: '',
     paymentOption: '',
     transactionId: '',
     offlineReceiptNo: '',
   });
+
 
   useEffect(() => {
     async function loadData() {
@@ -114,7 +115,7 @@ export default function RegistrationForm() {
         examYearId: examYear.id,
         fullName: formData.fullName,
         gender: formData.gender as 'Male' | 'Female' | 'Other',
-        dob: formData.dob,
+        dob: formData.dob || null, // ✅ send null if empty
         class: parseInt(formData.class),
         medium: formData.medium as 'Assamese' | 'English',
         schoolId: formData.schoolId,
@@ -122,7 +123,7 @@ export default function RegistrationForm() {
         districtId: formData.districtId,
         address: formData.address,
         studentMobile: formData.studentMobile,
-        guardianMobile: formData.guardianMobile,
+        guardianMobile: formData.guardianMobile || null, // ✅ send null if empty
         email: formData.email || undefined,
         paymentOption: formData.paymentOption as 'Online' | 'Offline',
         transactionId: formData.transactionId || undefined,
@@ -241,7 +242,6 @@ export default function RegistrationForm() {
                 <Grid size={{ xs: 12, md: 6 }}>
                   <TextField
                     fullWidth
-                    required
                     type="date"
                     label="Date of Birth"
                     value={formData.dob}
@@ -353,7 +353,6 @@ export default function RegistrationForm() {
                 <Grid size={{ xs: 12, md: 6 }}>
                   <TextField
                     fullWidth
-                    required
                     label="Guardian Mobile Number"
                     value={formData.guardianMobile}
                     onChange={(e) => setFormData({ ...formData, guardianMobile: e.target.value })}
