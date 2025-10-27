@@ -66,7 +66,7 @@ export default function AboutSection() {
             variant="h4"
             align="center"
             sx={{
-              fontSize: { xs: '1rem', md: '2rem' },
+              fontSize: { xs: '2rem', md: '2rem' },
               mb: 2,
               color: 'text.secondary',
             }}
@@ -145,7 +145,7 @@ export default function AboutSection() {
             variant="h4"
             align="center"
             sx={{
-              fontSize: { xs: '1rem', md: '2rem' },
+              fontSize: { xs: '2rem', md: '2rem' },
               mb: 2,
               mt:5,
               color: 'text.secondary',
